@@ -16,15 +16,15 @@ Emulated Belkin WeMo (UPNP Emulation) smart plug for Amazon Echo working with 43
 [Etekcity ZAP 2L](https://www.amazon.fr/dp/B01M262058/)
 ```
 pulse 175 (between 175 and 180) 
-1:
+0:
 on: 1054003
 off: 1054012
 
-2:
+1:
 on: 1054147
 off: 1054156
 
-3:
+2:
 on: 1054467
 off: 1054476
 ```
