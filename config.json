@@ -1,0 +1,25 @@
+{
+    "FAUXMO": {
+        "ip_address": "auto"
+    },
+    "PLUGINS": {
+        "SimpleHTTPPlugin": {
+            "DEVICES": [
+                {
+                    "name": "Smart plug 1",
+                    "port": 12340,
+                    "on_cmd": "http://localhost/1/on",
+                    "off_cmd": "http://localhost/1/off",
+                    "method": "GET"
+                },
+                {
+                    "name": "Smart plug 2",
+                    "port": 12341,
+                    "on_cmd": "http://localhost/2/on",
+                    "off_cmd": "http://localhost/2/off",
+                    "method": "GET"
+                }
+            ]
+        }
+    }
+}
