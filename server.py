@@ -20,7 +20,6 @@ def on():
     arg = request.args.get('n')
     if arg is None:
         return jsonify("Missing argument: n"), 400
-    print("turn on: " + arg)
     n = int(arg)
     call(["/root/rfoutlet/codesend", str(onCode[n])])
     return jsonify(" "), 200
@@ -30,7 +29,6 @@ def off():
     arg = request.args.get('n')
     if arg is None:
         return jsonify("Missing argument: n"), 400
-    print("turn off: " + arg)
     n = int(arg)
     call(["/root/rfoutlet/codesend", str(offCode[n])])
     return jsonify(" "), 200
